@@ -12,7 +12,7 @@ from typing import Dict, Union
 
 # A list of plugin IDs to use
 PLUGIN_IDS: list = [
-    "continuousprint",
+    "continuousprint"
 ]
 
 DATA_URL: str = "https://data.octoprint.org/export/"
