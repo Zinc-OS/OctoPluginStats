@@ -2,7 +2,7 @@ name: Get new data
 on:
   schedule:
     # Every day, 5 mins past, hopefully?
-    - cron: "60 * * *"
+    - cron: "1 * * * *"
   workflow_dispatch:
 
 jobs:
