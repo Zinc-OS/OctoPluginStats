@@ -30,7 +30,7 @@ DATA: Dict[str, Dict[str, Union[int, str, list]]] = {}
 #           {"date": "2020-12-1", "total": 00, "versions": {"0.1.0": 00, "0.2.0": 00}},
 #           "etc etc"
 #       }
-#   }
+#   }https://github.com/Zinc-OS/OctoPluginStats
 #  "etc...." for more plugins.
 
 TODAY = time.strftime("%Y-%m-%d")
@@ -65,7 +65,7 @@ for URL in [STATS_30_DAYS]:
             plugin_stats["versions"] = plugin_data["versions"]
 
             # Remove the 31st day, if relevant
-            if len(plugin_stats["history"]) >= 30:
+            if len(plugin_stats["history"]) >= 30*24:
                 # Check it's not been run more than once per day, latest data is not today.
                 if plugin_stats["history"][29]["date"] != TODAY:
                     # remove earliest data
