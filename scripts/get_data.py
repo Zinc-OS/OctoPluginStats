@@ -67,7 +67,7 @@ for URL in [STATS_30_DAYS]:
             # Remove the 31st day, if relevant
             if len(plugin_stats["history"]) >= 30*24:
                 # Check it's not been run more than once per day, latest data is not today.
-                if plugin_stats["history"][29]["date"] != TODAY:
+                if plugin_stats["history"][(30*24)-1]["date"] != TODAY:
                     # remove earliest data
                     plugin_stats["history"].pop(0)
 
