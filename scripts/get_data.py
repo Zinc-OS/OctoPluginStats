@@ -33,7 +33,7 @@ DATA: Dict[str, Dict[str, Union[int, str, list]]] = {}
 #   }https://github.com/Zinc-OS/OctoPluginStats
 #  "etc...." for more plugins.
 
-TODAY = time.strftime("%Y-%m-%d")
+TODAY = time.strftime("%Y-%m-%d-%H")
 
 # Incremented for testing
 # TODAY = "2021-01-02"
